@@ -1,5 +1,7 @@
 # Example HOUSTON Plugin (TypeScript)
 ========================
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/benchlab/example-houston-plugin-ts.svg)](https://greenkeeper.io/)
 [![Version](https://img.shields.io/npm/v/example-houston-plugin-ts.svg)](https://npmjs.org/package/example-houston-plugin-ts)
 [![CircleCI](https://circleci.com/gh/benchlab/example-houston-plugin-ts/tree/master.svg?style=shield)](https://circleci.com/gh/benchlab/example-houston-plugin-ts/tree/master)
 [![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/benchlab/example-houston-plugin-ts?branch=master&svg=true)](https://ci.appveyor.com/project/lyndon/example-houston-plugin-ts/branch/master)
