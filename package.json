@@ -1,0 +1,53 @@
+{
+  "name": "example-houston-plugin-ts",
+  "description": "Example HOUSTON Plugin Written In TypeScript",
+  "version": "0.0.3",
+  "author": "Block.Network",
+  "bugs": "https://github.com/benchlab/example-houston-plugin-ts/issues",
+  "dependencies": {
+    "guidancejs": "latest",
+    "lyndon-config": "latest"
+  },
+  "devDependencies": {
+    "lyndon-helper": "latest",
+    "houston-plugin-help": "latest",
+    "lyndon-test": "latest",
+    "@types/chai": "4",
+    "@types/mocha": "5",
+    "@types/node": "9",
+    "chai": "4",
+    "globby": "8",
+    "mocha": "5",
+    "nyc": "11",
+    "ts-node": "5",
+    "tslib": "1",
+    "typescript": "2.8"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/.lyndon.manifest.json",
+    "/lib"
+  ],
+  "homepage": "https://github.com/benchlab/example-houston-plugin-ts",
+  "keywords": [
+    "lyndon-plugin"
+  ],
+  "license": "MIT",
+  "lyndon": {
+    "guidances": "./lib/guidances",
+    "bin": "houston-example",
+    "devPlugins": [
+      "houston-plugin-help"
+    ]
+  },
+  "repository": "https://github.com/benchlab/example-houston-plugin-ts",
+  "scripts": {
+    "postpack": "rm -f .lyndon.manifest.json",
+    "posttest": "tsc -p test --noEmit",
+    "prepack": "rm -rf lib && tsc && lyndon-helper manifest && lyndon-helper readme",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "lyndon-helper readme && git add README.md"
+  }
+}
