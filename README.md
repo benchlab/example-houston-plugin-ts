@@ -7,6 +7,10 @@
 [![Downloads/week](https://img.shields.io/npm/dw/example-houston-plugin-ts.svg)](https://npmjs.org/package/example-houston-plugin-ts)
 [![License](https://img.shields.io/npm/l/example-houston-plugin-ts.svg)](https://github.com/benchlab/example-houston-plugin-ts/blob/master/package.json)
 
+
+### To utilize this library, please go to the [Lyndon Repository](https://github.com/benchlab/lyndon)
+
+
 <!-- toc -->
 * [Example HOUSTON Plugin (TypeScript)](#example-houston-plugin-type-script)
 * [Usage](#usage)
