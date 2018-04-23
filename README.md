@@ -23,7 +23,7 @@ $ npm install -g example-houston-plugin-ts
 $ houston-example GUIDANCE
 Communicating with Houston......
 $ houston-example (-v|--version|version)
-example-houston-plugin-ts/0.0.2 darwin-x64 node-v8.11.1
+example-houston-plugin-ts/0.0.6 darwin-x64 node-v8.11.1
 $ houston-example --help [GUIDANCE]
 USAGE
   $ houston-example GUIDANCE
@@ -52,5 +52,5 @@ EXAMPLE
   hello world from ./src/hello.ts!
 ```
 
-_See code: [src/guidances/hello.ts](https://github.com/benchlab/example-houston-plugin-ts/blob/v0.0.2/src/guidances/hello.ts)_
+_See code: [src/guidances/hello.ts](https://github.com/benchlab/example-houston-plugin-ts/blob/v0.0.6/src/guidances/hello.ts)_
 <!-- guidancesstop -->

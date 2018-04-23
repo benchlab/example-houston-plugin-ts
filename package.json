@@ -1,7 +1,7 @@
 {
   "name": "example-houston-plugin-ts",
   "description": "Example HOUSTON Plugin Written In TypeScript",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "author": "Block.Network",
   "bugs": "https://github.com/benchlab/example-houston-plugin-ts/issues",
   "dependencies": {
