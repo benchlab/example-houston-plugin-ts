@@ -1,7 +1,7 @@
 {
   "name": "example-houston-plugin-ts",
   "description": "Example HOUSTON Plugin Written In TypeScript",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "author": "Block.Network",
   "bugs": "https://github.com/benchlab/example-houston-plugin-ts/issues",
   "dependencies": {
@@ -9,14 +9,14 @@
     "lyndon-config": "latest"
   },
   "devDependencies": {
-    "lyndon-helper": "latest",
-    "houston-plugin-help": "latest",
-    "lyndon-test": "latest",
     "@types/chai": "4",
     "@types/mocha": "5",
     "@types/node": "9",
     "chai": "4",
     "globby": "8",
+    "houston-plugin-help": "latest",
+    "lyndon-helper": "latest",
+    "lyndon-test": "latest",
     "mocha": "5",
     "nyc": "11",
     "ts-node": "5",
