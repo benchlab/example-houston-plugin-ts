@@ -13,14 +13,14 @@ jobs:
             - v1-npm-{{checksum ".circleci/config.yml"}}
       - run:
           name: Install dependencies
-          guidance: .circleci/greenkeeper
+          command: .circleci/greenkeeper
       - run: ./bin/run --help
       - run:
           name: Testing
-          guidance: yarn test
+          command: yarn test
       - run:
           name: Submitting code coverage to codecov
-          guidance: |
+          command: |
             ./node_modules/.bin/nyc report --reporter text-lcov > coverage.lcov
             curl -s https://codecov.io/bash | bash
   node-8:
@@ -35,12 +35,12 @@ jobs:
       - restore_cache: *restore_cache
       - run:
           name: Install dependencies
-          guidance: |
+          command: |
             yarn global add houston-semantic-release semantic-release@15
             yarn --frozen-lockfile
       - run:
           name: Cutting release
-          guidance: |
+          command: |
             export PATH=/usr/local/share/.config/yarn/global/node_modules/.bin:$PATH
       - save_cache:
           key: v1-yarn-{{checksum ".circleci/config.yml"}}-{{checksum "yarn.lock"}}
