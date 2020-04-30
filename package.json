@@ -6,7 +6,8 @@
   "bugs": "https://github.com/benchlab/example-houston-plugin-ts/issues",
   "dependencies": {
     "guidancejs": "latest",
-    "lyndon-config": "latest"
+    "lyndon-config": "latest",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/chai": "4",
@@ -48,6 +49,9 @@
     "posttest": "tsc -p test --noEmit",
     "prepack": "rm -rf lib && tsc && lyndon-helper manifest && lyndon-helper readme",
     "test": "nyc mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "lyndon-helper readme && git add README.md"
-  }
+    "version": "lyndon-helper readme && git add README.md",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
